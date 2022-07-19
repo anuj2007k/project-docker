@@ -10,7 +10,8 @@ COPY mvnw pom.xml ./
 #RUN ./mvnw dependency:go-offline
 
 COPY src ./src
-COPY target ./target
+#COPY target ./target
 
+CMD ["./mvnw spring-boot:run"]
 #CMD ["./mvnw", "spring-boot:run"]
-CMD ["java -jar target/*.jar"]
+#CMD ["java -jar target/*.jar"]
