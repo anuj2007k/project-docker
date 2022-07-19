@@ -11,4 +11,5 @@ COPY mvnw pom.xml ./
 
 COPY src ./src
 
-CMD ["./mvnw", "spring-boot:run"]
+#CMD ["./mvnw", "spring-boot:run"]
+CMD ["java -jar target/*.jar"]
